@@ -1,0 +1,47 @@
+{
+  "name": "funko",
+  "version": "1.0.0",
+  "main": "app-funko.js",
+  "scripts": {
+    "start": "tsc-watch --onSuccess \"node dist/menu.js\"",
+    "test": "vitest run",
+    "coverage": "vitest run --coverage --coverage.include src/",
+    "doc": "npx typedoc --entryPointStrategy Expand src",
+    "prettier": "prettier --write ."
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "[![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-22041afd0340ce965d47ae6ef1cefeee28c7c493a6346c4f15d667ab976d596c.svg)](https://classroom.github.com/a/nao75Rei) [![Open in Codespaces](https://classroom.github.com/assets/launch-codespace-2972f46106e565e64193e422d61a12cf1da4916b45550586e14ef0a7c637dd04.svg)](https://classroom.github.com/open-in-codespaces?assignment_repo_id=18694966)",
+  "devDependencies": {
+    "@eslint/js": "^9.20.0",
+    "@types/inquirer": "^9.0.7",
+    "@types/node": "^22.13.10",
+    "@types/yargs": "^17.0.33",
+    "@vitest/coverage-v8": "^3.0.5",
+    "eslint": "^9.20.1",
+    "eslint-config-prettier": "^10.0.1",
+    "globals": "^15.15.0",
+    "prettier": "^3.5.1",
+    "tsc-watch": "^6.2.1",
+    "typedoc": "^0.27.7",
+    "typescript": "^5.7.3",
+    "typescript-eslint": "^8.24.0",
+    "vitest": "^3.0.5"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ULL-ESIT-INF-DSI-2425/prct07-witcher-datamodel-groupa.git"
+  },
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/ULL-ESIT-INF-DSI-2425/prct07-witcher-datamodel-groupa/issues"
+  },
+  "homepage": "https://github.com/ULL-ESIT-INF-DSI-2425/prct07-witcher-datamodel-groupa#readme",
+  "dependencies": {
+    "chalk": "^5.4.1",
+    "inquirer": "^12.5.0",
+    "lowdb": "^7.0.1",
+    "yargs": "^17.7.2"
+  }
+}
