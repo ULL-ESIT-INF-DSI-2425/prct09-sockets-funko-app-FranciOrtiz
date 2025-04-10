@@ -15,7 +15,7 @@ const client = net.createConnection({ port: 60300, host: "127.0.0.1" }, () => {
 // Se toman los datos del servidor y se tratan
 client.on("data", (data) => {
   console.log("Servidor:", data.toString());
-  if (!data.toString().includes("ingrese su nombre de usuario")) {
+  if (!data.toString().includes("Ingrese su nombre de usuario: ")) {
     rl.question("> ", (input) => client.write(input));
   }
 });
